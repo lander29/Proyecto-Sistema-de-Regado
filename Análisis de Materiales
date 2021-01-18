@@ -54,8 +54,6 @@ Debe ser responsivo para que se vea en todos los dispositivos.
 Es importante plantearte dudas y preguntas con respecto a los componentes. Esta es la fase previa antes de elegir un componente u otro para el proyecto. El sensor, placa o dispositivo elegido debe cumplir con las especificaciones y requerimientos 
 
 
-
-
 Arduino NANO
 El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
 
