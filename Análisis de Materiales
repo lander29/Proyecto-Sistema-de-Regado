@@ -1,0 +1,375 @@
+
+Arduino UNO  \Huge
+
+Para que un componente o sensor funcione, requiere que lo programes en el código de Arduino.
+
+Vamos a ir viendo como plantear las especificaciones según el componente y los requerimientos 
+Idea
+Requerimiento 
+
+
+Microcontrolador: conexión a Internet 
+Al necesitar conexión a Internet necesitamos conexión con WiFi pero,
+¿es necesario desde el primer momento? 
+
+
+Temperatura 
+Dependerá de donde vivas. No es lo mismo medir la temperatura en
+Sevilla que en Estocolmo. El rango que debe medir es totalmente diferente. 
+
+
+Humedad 
+Puedes usar un sensor específico para medir la humedad o uno combinado
+para medir temperatura y humedad a la vez 
+Listo el programa de arduino con valor enteros y porcentaje.
+Presión atmosférica 
+Igual que en el caso anterior, ¿existe algún sensor que mida temperatura,
+humedad y presión? 
+
+
+Luminosidad 
+Con una resistencia LDR te puede servir, dependerá de dónde vivas 
+
+
+Batería 
+¿Qué consumo necesita el sistema?¿Soporta la alimentación con baterías?
+¿Voltaje de operación? 
+
+
+Pantalla información 
+¿Qué información hay que mostrar? Temperatura, humedad, presión,
+decibelios, contaminación, nivel de batería, velocidad del viento, etc….
+Dependerá elegir una pantalla u otra de la información que quieras mostrar. 
+
+
+Plataforma en la nube 
+¿Realmente es útil para ti almacenar la información?¿toda la información? 
+
+
+Aplicación web 
+Debe ser responsivo para que se vea en todos los dispositivos. 
+
+
+
+Es importante plantearte dudas y preguntas con respecto a los componentes. Esta es la fase previa antes de elegir un componente u otro para el proyecto. El sensor, placa o dispositivo elegido debe cumplir con las especificaciones y requerimientos 
+
+
+
+
+Arduino NANO
+El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
+
+Especificaciones técnicas de Arduino Nan
+Microcontrolador Arduino ATmega328
+Arquitectura, AVR
+Voltaje de operación, 5 V
+Memoria flash,32 KB de los cuales 2 KB utilizados por bootloader
+SRAM 2 KB
+Velocidad del reloj 16 MHz
+Pines de E/S analógicas, 8
+EEPROM,1 KB
+Corriente continua por pin entrada salida, 40 mA (Pines de E/S)
+Voltaje de entrada, 7-12V
+Pines de E/S digitales, 22
+Salida PWM, 6
+Consumo de energía, 19 mA
+Tamaño de la placa de circuito impreso,18 x 45 mm
+Peso, 7 g
+
+
+ProtoBoard 
+
+El protoboard (breadboard en inglés) es una placa que posee unos orificios conectados eléctricamente entre sí siguiendo un patrón horizontal o vertical. Es empleada para realizar pruebas de circuitos electrónicos, insertando en ella componentes electrónicos y cables como puente. Es el boceto de un circuito electrónico donde se realizan las pruebas de funcionamiento necesarias antes de trasladarlo sobre un circuito impreso. Esta placa puede llamarse de varias formas, las más comunes son “protoboard«, «breadboard«,  «placa protoboard»  o incluso «placa de pruebas«.
+
+
+
+
+
+
+
+
+
+
+                                                                 -Esta suele ser Patrón típico de disposición   
+de las láminas de  material conductor 
+                                                                                              en una placa de pruebas.     
+
+  
+
+º Otros Tipos de placas: 
+
+Placa de perforación 
+
+Pega los cables de los componentes a través de los orificios y suelda los cables a los cables de otros componentes. Es primitivo, pero funciona.tiene un patrón de cobre impreso en su superficie, al que puede soldar componentes. El tipo más simple es la almohadilla por orificio, que simplemente tiene un anillo de cobre alrededor de cada orificio. La ventaja de esto sobre el tablero de perforación simple es que cada componente está soldado al tablero en lugar de entre sí, por lo que es más fácil trabajar con él y el proyecto es más estable.
+
+
+
+
+
+Perfboard complicado
+
+Tipos de tableros perfilados con varios patrones de cobre que conectan múltiples orificios. En la imagen de abajo, las marcas blancas en la parte superior del tablero le indican dónde está el cobre en la parte inferior. Este tipo en particular tiene un patrón complicado: hay dos tiras de bus en el centro de la placa, almohadillas de 2 orificios en los bordes de la placa y almohadillas de 3 orificios y almohadillas por orificios entre las dos.
+
+
+
+
+
+
+
+
+
+
+
+Sensor de Humedad y temperatura
+
+El DHT11 es un sensor digital de temperatura y humedad relativa de bajo costo y fácil uso. Integra un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no posee salida analógica).Una de las ventajas que nos ofrece el DHT11, además de medir la temperatura y la humedad, es que es digital. A diferencia de sensores como el LM35, este sensor utiliza un pin digital para enviarnos la información y por lo tanto, estaremos más protegidos frente al ruido.
+
+
+
+
+Los pines de la versión sin PCB del DHT11 son:
+ 
+VCC: alimentación
+I/O: transmisión de datos
+NC: no conectado, pin al aire
+GND: conexión a tierra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Características técnicas del DHT11
+
+Modelo 
+DHT11
+Alimentación
+de 3,5V a 5V
+Consumo
+2,4mA
+Señal de salida
+Digital
+
+
+TEMPERATURA
+Rango
+de 0ºc a 50ºc
+Precisión
+a 25ºc + 2ºc
+Resolución
+1ºc (8-bit)
+
+
+
+HUMEDAD
+Rango
+de 20% RH a 90%
+Precisión
+entre 0ºc y 50ºc + 5% RH
+Resolución
+1% RH
+
+ 
+¿Cómo transmite los datos el DHT11?
+El propio dispositivo hace la conversión entre analógico y digital. Por lo tanto, partimos de una señal analógica que luego es convertida en formato digital y se enviará al microcontrolador. La trama de datos es de 40 bits correspondiente a la información de humedad y temperatura del DHT11.
+
+
+
+
+Estos bits de paridad lo único que hacen es asegurarnos de que la información es correcta, sumando los 4 primero grupos de 8-bit. Esta suma debe ser igual a los bit de paridad. Si nos centramos en la imagen anterior y sumamos los bits, comprobamos que todo está correcto.
+0011 0101 + 0000 0000 + 0001 1000 + 0000 0000 = 0100 1101
+Sensor YL-69
+Este sensor tiene la capacidad de medir la humedad del suelo. Aplicando una pequeña tensión entre los terminales del módulo YL-69 hace pasar una corriente que depende básicamente de la resistencia que se genera en el suelo y ésta depende mucho de la humedad. Por lo tanto, al aumentar la humedad la corriente crece y al bajar la corriente disminuye.
+
+ 
+Características técnicas del YL-69
+Especificaciones
+
+Voltaje de entrada: 3.3 – 5 VCD
+Voltaje de salida: 0 ~ 4.2 V
+Corriente: 35 mA
+Dimensiones YL-38: 30 x 16 mm
+Dimensiones YL-69: 60 x 30 mm
+Peso: 7 g
+ 
+Terminales
+
+VCC: Tensión de alimentación
+GND: Tierra
+A0: Salida analógica que entrega una tensión proporcional a la humedad.
+D0: Salida digital; este módulo permite ajustar cuándo el nivel lógico en esta salida pasa de bajo a alto mediante el potenciómetro.
+ 
+Mini Bomba de Agua 3V
+
+ 
+♥)    -     Material: Plástico 
+ 
+Tipo: dc3 V-5 V/sumergible 
+ 
+Corriente: 100 – 200 mA
+ 
+Máx. rendimiento: 100 L/h H. Max: 0,8 m 
+ 
+♥)  Es ajustable y puede aumentar el oxígeno de su acuario.
+ 
+♥)  Es pequeño, ahorro de espacio, se puede ajustar a cualquier lugar del depósito
+ 
+♥)  Trabajo en conjunto con una bomba de aire, no echa de ruido.
+ 
+Diodo 1N7004
+Un diodo es un componente electrónicos de dos terminales que permite la circulación de la corriente eléctrica a través de él en un solo sentido. La flecha del símbolo del diodo muestra la dirección en la cual puede fluir la corriente.
+El 1N4007 es un diodo rectificador de recuperación estándar con una caja de plástico moldeada. Terminales soldables según MIL-STD-202, método 208 estándar. La banda de color indica la polaridad del extremo del cátodo.
+
+
+
+
+
+
+
+
+Especificaciones
+Tipo de diodo: Estándar recuperadores
+Tipo: Rectificador de propósito general
+Con configuración: Sencilla
+Tensión máxima de apagado repetitiva, Vdrm: 1000 V
+Corriente directa  lf (AV): 1 A
+Voltaje directo máximo VF: 1.1 V
+Corriente directa transitoria Ifsm máxima: 30 A
+Temperatura de operación máxima:  175°C
+Encapsulado: DO-204AL
+Axial: 2 puntas
+Modelo: 65W8780
+Modelo: 803-467
+ 
+
+Transistor PN2222
+El 2N2222, también identificado como PN2222, es un transistor bipolar NPN de baja potencia de uso general.
+Sirve tanto para aplicaciones de amplificación como de conmutación. Puede amplificar pequeñas corrientes a tensiones pequeñas o medias; por lo tanto, sólo puede tratar potencias bajas (no mayores de medio vatio). Puede trabajar a frecuencias medianamente altas.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fotoresistor
+Una fotorresistencia es un componente eléctrico, el cual posee una resistencia capaz de variar su magnitud al estar en contacto con distintas magnitudes de intensidad lumínica.
+Está conformado por una célula fotorreceptora y dos pastillas; cuando dicha célula no percibe cierto nivel de luz (es decir cuando baja del mínimo de lúmenes predefinido), entonces hace contacto y se encienden las luces.
+¿Cómo funciona una fotorresistencia?
+La base del funcionamiento de una fotorresistencia radica en su componente principal, el sulfuro de cadmio (CdS). Este componente químico es un semiconductor que tiene la capacidad de variar su resistencia según la cantidad de luz que en él incida.
+Cuanto mayor intensidad es la luz que incide sobre el sulfuro de cadmio, más baja es la resistencia, es decir mayor facilidad de los electrones para moverse. Vale saber que la variación de la resistencia cuando hay cambios de luminosidad repentinos no sigue la misma velocidad, sino que tiene retardo.
+Tipos de fotoresistência
+Existen 2 tipos de fotorresistencias según la forma en que polarizan.
+Fotorresistencia o LDR lineales: Son aquellas que polarizan a la inversa de la fuente donde se conecte. Son también llamadas fotodiodos.
+Fotorresistencia o LDR no lineales:  La polaridad de este fotorresistor no depende de la fuente donde se conecte.
+Características de las fotorresistencias
+Conformados por un semiconductor de alta resistencia.
+La resistencia varía entre 1MΩ, cuando hay mucha oscuridad y 100Ω con altas intensidades de luz
+Tiempo de respuesta de 1 décima de segundo cuando varía la intensidad lumínica.
+De muy bajo costo y tecnología sencilla, por lo tanto se puede encontrar en cámaras, medidores de luz, alarmas de seguridad, medidores de radio o los sistemas de alumbrado público; también en autos modernos.
+¿Cómo conectar una fotorresistencia?
+Conectar una fotorresistencia es tan simple como conectar sus terminales al circuito, como si fuera una resistencia, la cual variará según la intensidad lumínica. En el siguiente video podemos ver paso a paso cómo hacer para conectar una fotorresistencia a un circuito.
+ 
+Ventajas de las fotorresistencias
+Puede abarcar superficies grandes.
+Es fácil de usar. Solo con conectar las terminales funciona.
+El costo de adquirir una fotorresistencia es bajo y permite abaratar costos de personal.
+Tiene una gran relación luz, oscuridad, electricidad.
+Desventajas de las fotorresistencias
+Se debe elegir la fotorresistencia en función del tipo de luz que se quiere medir (infrarrojo, luz visible o ultravioleta).
+Se produce lo que se conoce como efecto histéresis. Lo que hace es quedar guardado en lo que sería “la memoria” del metal, ciertas condiciones, que al tener que cambiar por cambios de luz, retrasan el funcionamiento.
+No pueden ser usados en lugares donde la luz varia rápidamente, ya que tiene una velocidad de respuesta lenta.
+La variación de la resistencia en función de la intensidad lumínica no es lineal.
+ 
+Rele FINDER 40.31
+Es un dispositivo electromagnético. Funciona como un interruptor controlado por un circuito eléctrico en el que, por medio de una bobina y un electroimán, se acciona un juego de uno o varios contactos que permiten abrir o cerrar otros circuitos eléctricos independientes.
+
+Características
+Tipo de relé electromagnético
+Configuración de contactos SPDT  
+Tensión nominal de inductor 230VAC 
+Capacidad de carga de contactos AC (a carga resistiva) 10A / 250VAC 
+Capacidad de carga de contactos DC (a carga resistiva) 10A / 30VDC   
+Corriente máx. de contactos 20A    
+Tensión conectada max 220 VCC, máx 400VCA   
+Versión de relé miniatura   
+Montaje  PCB, soporte 
+Resistencia del inductor 28kO    
+Medidas interiores 29 x 12.4 x 25mm  
+Toma de potencia del inductor 1,2VA
+Temperatura de trabajo -40...85°C 
+Serie de relés 40.31  
+Material de contactor AgNi
+Ráster de terminales 3.5mm  
+Corriente de inductor 5mA
+ 
+I2C
+Es un bus serie de datos desarrollado en 1982 por Philips Semiconductors que se utiliza principalmente internamente para la comunicación entre diferentes partes de un circuito, por ejemplo, entre un controlador y circuitos periféricos integrados.
+
+ 
+Pantalla OLED
+Los LCD tienen una interfaz paralela, lo que significa que el microcontrolador tiene que manipular varios pines de interfaz a la vez para controlar la pantalla. La interfaz consta de los siguientes pines:
+Un pin de selección de registro (RS) que controla en qué parte de la memoria de la pantalla LCD está escribiendo datos. Puede seleccionar el registro de datos, que contiene lo que aparece en la pantalla, o un registro de instrucciones, que es donde el controlador de la pantalla LCD busca instrucciones sobre qué hacer a continuación.
+Un pin de lectura / escritura (R / W) que selecciona el modo de lectura o el modo de escritura
+Un pin de habilitación que permite escribir en los registros
+8 pines de datos (D0 -D7) . Los estados de estos pines (alto o bajo) son los bits que está escribiendo en un registro cuando escribe, o los valores que está leyendo cuando lee.
+También hay un pasador de pantalla constrast (Vo) , pines de alimentación (+ 5V y GND) y la luz de fondo LED (BKLT + y BKlt-) alfileres que se pueden utilizar al poder del LCD, controlar el contraste de la pantalla, y encienda y se apague el LED retroiluminación, respectivamente.
+El proceso de control de la pantalla implica colocar los datos que forman la imagen de lo que desea mostrar en los registros de datos y luego colocar las instrucciones en el registro de instrucciones. La Biblioteca Liquid Crystal simplifica esto para usted para que usted no necesita saber las instrucciones de bajo nivel.
+Las pantallas LCD compatibles con Hitachi se pueden controlar en dos modos: 4 u 8 bits. El modo de 4 bits requiere siete pines de E / S del Arduino, mientras que el modo de 8 bits requiere 11 pines. Para mostrar texto en la pantalla, puede hacer casi todo en el modo de 4 bits, por lo que el ejemplo muestra cómo controlar una pantalla LCD de 16x2 en el modo de 4 bits.
+Hardware requerido
+Placa Arduino
+Pantalla LCD (compatible con el controlador Hitachi HD44780)
+encabezados de pines para soldar a los pines de la pantalla LCD
+Potenciómetro de 10k ohmios
+Resistencia de 220 ohmios
+cables de conexión
+tablero de circuitos
+Circuito
+Antes de conectar la pantalla LCD a su placa Arduino, le sugerimos que suelde una tira de encabezado de clavija al conector de recuento de clavijas de 14 (o 16) de la pantalla LCD, como puede ver en la imagen de arriba. Para conectar su pantalla LCD a su placa, conecte los siguientes pines:
+Pin LCD RS a pin digital 12
+LCD Activar pin a pin digital 11
+Pin LCD D4 a pin digital 5
+Pin LCD D5 a pin digital 4
+Pin LCD D6 a pin digital 3
+LCD D7 pin a pin digital 2
+Pin de LCD R / W a GND
+Pin de LCD VSS a GND
+Pin VCC LCD a 5V
+LCD LED + a 5V a través de una resistencia de 220 ohmios
+LED LCD- a GND
+Además, conecte una olla de 10k a + 5V y GND, con su limpiador (salida) al pin VO de las pantallas LCD (pin3).
+
+
+LCD QC1602A      ARDUNO UNO
+1 (VSS) -------- GND
+2 (VDD) -------- +5V
+3 (V0)  -------- POT (R 1K>GND, R 4.7K>+5V)
+4 (RS)  -------- D12
+5 (RW)  -------- GND
+6 (E)   -------- D11
+7 (D0)  
+8 (D1)
+9 (D2)
+10 (D3)
+11 (D4)  -------- D5
+12 (D5)  -------- D4
+13 (D6)  -------- D3
+14 (D7)  -------- D2
+15 (A)   -------- R 220>+5V
+16 (K)   -------- GND
