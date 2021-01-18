@@ -78,20 +78,6 @@ Peso, 7 g
 ProtoBoard 
 
 El protoboard (breadboard en inglés) es una placa que posee unos orificios conectados eléctricamente entre sí siguiendo un patrón horizontal o vertical. Es empleada para realizar pruebas de circuitos electrónicos, insertando en ella componentes electrónicos y cables como puente. Es el boceto de un circuito electrónico donde se realizan las pruebas de funcionamiento necesarias antes de trasladarlo sobre un circuito impreso. Esta placa puede llamarse de varias formas, las más comunes son “protoboard«, «breadboard«,  «placa protoboard»  o incluso «placa de pruebas«.
-
-
-
-
-
-
-
-
-
-
-                                                                 -Esta suele ser Patrón típico de disposición   
-de las láminas de  material conductor 
-                                                                                              en una placa de pruebas.     
-
   
 
 º Otros Tipos de placas: 
@@ -101,28 +87,14 @@ Placa de perforación
 Pega los cables de los componentes a través de los orificios y suelda los cables a los cables de otros componentes. Es primitivo, pero funciona.tiene un patrón de cobre impreso en su superficie, al que puede soldar componentes. El tipo más simple es la almohadilla por orificio, que simplemente tiene un anillo de cobre alrededor de cada orificio. La ventaja de esto sobre el tablero de perforación simple es que cada componente está soldado al tablero en lugar de entre sí, por lo que es más fácil trabajar con él y el proyecto es más estable.
 
 
-
-
-
 Perfboard complicado
 
 Tipos de tableros perfilados con varios patrones de cobre que conectan múltiples orificios. En la imagen de abajo, las marcas blancas en la parte superior del tablero le indican dónde está el cobre en la parte inferior. Este tipo en particular tiene un patrón complicado: hay dos tiras de bus en el centro de la placa, almohadillas de 2 orificios en los bordes de la placa y almohadillas de 3 orificios y almohadillas por orificios entre las dos.
 
 
-
-
-
-
-
-
-
-
-
 Sensor de Humedad y temperatura
 
 El DHT11 es un sensor digital de temperatura y humedad relativa de bajo costo y fácil uso. Integra un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no posee salida analógica).Una de las ventajas que nos ofrece el DHT11, además de medir la temperatura y la humedad, es que es digital. A diferencia de sensores como el LM35, este sensor utiliza un pin digital para enviarnos la información y por lo tanto, estaremos más protegidos frente al ruido.
-
-
 
 
 Los pines de la versión sin PCB del DHT11 son:
@@ -131,19 +103,6 @@ VCC: alimentación
 I/O: transmisión de datos
 NC: no conectado, pin al aire
 GND: conexión a tierra
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Características técnicas del DHT11
@@ -167,7 +126,6 @@ Resolución
 1ºc (8-bit)
 
 
-
 HUMEDAD
 Rango
 de 20% RH a 90%
@@ -179,8 +137,6 @@ Resolución
  
 ¿Cómo transmite los datos el DHT11?
 El propio dispositivo hace la conversión entre analógico y digital. Por lo tanto, partimos de una señal analógica que luego es convertida en formato digital y se enviará al microcontrolador. La trama de datos es de 40 bits correspondiente a la información de humedad y temperatura del DHT11.
-
-
 
 
 Estos bits de paridad lo único que hacen es asegurarnos de que la información es correcta, sumando los 4 primero grupos de 8-bit. Esta suma debe ser igual a los bit de paridad. Si nos centramos en la imagen anterior y sumamos los bits, comprobamos que todo está correcto.
@@ -208,30 +164,23 @@ D0: Salida digital; este módulo permite ajustar cuándo el nivel lógico en est
  
 Mini Bomba de Agua 3V
 
- 
-♥)    -     Material: Plástico 
+
+-Material : Plástico
  
 Tipo: dc3 V-5 V/sumergible 
  
 Corriente: 100 – 200 mA
  
 Máx. rendimiento: 100 L/h H. Max: 0,8 m 
+  Es ajustable y puede aumentar el oxígeno de su acuario.
  
-♥)  Es ajustable y puede aumentar el oxígeno de su acuario.
+  Es pequeño, ahorro de espacio, se puede ajustar a cualquier lugar del depósito
  
-♥)  Es pequeño, ahorro de espacio, se puede ajustar a cualquier lugar del depósito
- 
-♥)  Trabajo en conjunto con una bomba de aire, no echa de ruido.
- 
+  Trabajo en conjunto con una bomba de aire, no echa de ruido.
+
 Diodo 1N7004
 Un diodo es un componente electrónicos de dos terminales que permite la circulación de la corriente eléctrica a través de él en un solo sentido. La flecha del símbolo del diodo muestra la dirección en la cual puede fluir la corriente.
 El 1N4007 es un diodo rectificador de recuperación estándar con una caja de plástico moldeada. Terminales soldables según MIL-STD-202, método 208 estándar. La banda de color indica la polaridad del extremo del cátodo.
-
-
-
-
-
-
 
 
 Especificaciones
@@ -253,18 +202,6 @@ Transistor PN2222
 El 2N2222, también identificado como PN2222, es un transistor bipolar NPN de baja potencia de uso general.
 Sirve tanto para aplicaciones de amplificación como de conmutación. Puede amplificar pequeñas corrientes a tensiones pequeñas o medias; por lo tanto, sólo puede tratar potencias bajas (no mayores de medio vatio). Puede trabajar a frecuencias medianamente altas.
  
-
-
-
-
-
-
-
-
-
-
-
-
 
 Fotoresistor
 Una fotorresistencia es un componente eléctrico, el cual posee una resistencia capaz de variar su magnitud al estar en contacto con distintas magnitudes de intensidad lumínica.
