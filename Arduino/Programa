@@ -1,1 +1,146 @@
+Sistema de Riego Automatico.
+//Autores: Amadeo Nguema - Lander Hernandez - Miguel Chilquillo
 
+#include <SimpleDHT.h>
+#include <SimpleDHT.h>
+#include <SPI.h>
+#define humidity_sensor_pin A0
+#define humidity1_sensor1_pin A1
+#define humidity2_sensor2_pin A2
+#define humidity3_sensor3_pin A3
+#define ldr_pin A5
+
+
+
+//Bibliotecas para los módulos sensores usados necesarias
+//Y definición de variables para los sensores de humedad y LDR en los pines A0 a A5
+
+int pinDHT11 = 12;
+SimpleDHT11 dht11;
+int ldr_value = 0;
+
+int water_pump_speed = 255;
+int water_pump_pin1 = 4;
+int water_pump_pin2 = 5;
+int water_pump_pin3 = 6;
+int water_pump_pin4 = 7;
+
+
+//Aquí puedes dar valores desde 0 a 255 para la velocidad a la que trabajará la minibomba
+//Haz pruebas previas del caudal y configura la. Yo he //elegido 255 pero ustedes pueden elegir la que estimen conveniente. A más velocidad, mayor //bombeo de agua
+void setup() {
+  Serial.begin(9600);
+  Serial.begin(115200);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+
+}
+void loop() {
+
+
+  // Mide la temperatura y humedad relativa y muestra resultado
+  Serial.println("*******************************");
+  Serial.println("Muestra DHT11…");
+
+  byte temperature = 0;
+  byte humidity_in_air = 0;
+  byte data[40] = {0};
+  if (dht11.read(pinDHT11, &temperature, &humidity_in_air, data)) {
+    Serial.print("Lectura del sensor DHT11 fallida");
+    return;
+  }
+
+  Serial.print("Muestra RAW Bits: ");
+  for (int i = 0; i < 40; i++) {
+    Serial.print((int)data[i]); if (i > 0 && ((i + 1) % 4) == 0) {
+      Serial.print(" ");
+    }
+  }
+  Serial.println("");
+
+  Serial.print("Muestra OK: ");
+  Serial.print("Temperatura: "); Serial.print((int)temperature); Serial.print(" *C, ");
+  Serial.print("Humedad relativa en aire: "); Serial.print((int)humidity_in_air); Serial.println(" %");
+
+  int ground_humidity_value = map(analogRead(humidity_sensor_pin), 0, 1023, 100, 0);
+  Serial.print("Humedad en suelo: ");
+  Serial.print(ground_humidity_value);
+  Serial.println("%");
+
+  int ground1_humidity1_value1 = map(analogRead(humidity1_sensor1_pin), 0, 1023, 100, 0);
+  Serial.print("Humedad en suelo: ");
+  Serial.print(ground1_humidity1_value1);
+  Serial.println("%");
+
+
+  int ground2_humidity2_value2 = map(analogRead(humidity2_sensor2_pin), 0, 1023, 100, 0);
+  Serial.print("Humedad en suelo: ");
+  Serial.print(ground2_humidity2_value2);
+  Serial.println("%");
+
+  int ground3_humidity3_value3 = map(analogRead(humidity3_sensor3_pin), 0, 1023, 100, 0);
+  Serial.print("Humedad en suelo: ");
+  Serial.print(ground3_humidity3_value3);
+  Serial.println("%");
+
+
+  int ldr_value = map(analogRead(ldr_pin), 1023, 0, 100, 0);
+  Serial.print("Luz: ");
+  Serial.print(ldr_value);
+  Serial.println("%");
+  Serial.println("*******************************");
+
+  //**************************************************************
+  // Condiciones de riego
+  // Si la humedad en el suelo es igual o inferior al 60%, si la luminosidad es inferior al 30%,
+  // Si la temperatura es inferior al 35%, entonces el sistema de riego riega.
+  // En caso de que no se  cumpla alguno o ninguno de los 3 requisitos anteriores,
+  // el sistema de riego no riega
+  //**************************************************************
+  //Aquí puedes variar los parámetros que necesites de 60, 35 y 30, e incluso usar otros operandos <>=...
+  if ( ground_humidity_value <= 50 && ldr_value < 60 && temperature < 25) {
+    Serial.println("Regando1");
+    digitalWrite(water_pump_pin1, HIGH);
+    delay(8000);
+  }
+  else {
+    digitalWrite(water_pump_pin1, LOW);
+    Serial.println("Riego1 detenido");
+
+  }
+  if ( ground1_humidity1_value1 <= 70 && ldr_value < 30 && temperature < 35) {
+    Serial.println("Regando2");
+    digitalWrite(water_pump_pin2, HIGH);
+    delay(8000);
+  }
+  else {
+    digitalWrite(water_pump_pin2, LOW);
+    Serial.println("Riego2 detenido");
+
+  }
+  if ( ground2_humidity2_value2 <= 90 && ldr_value < 40 && temperature < 35) {
+
+    Serial.println("Regando3");
+    analogWrite(water_pump_pin3, HIGH);
+    delay(8000);
+  }
+  else {
+    digitalWrite(water_pump_pin3, LOW);
+    Serial.println("Riego3 detenido");
+    delay(8000);
+  }
+  if ( ground3_humidity3_value3 <= 60 && ldr_value < 30 && temperature < 35) {
+
+    Serial.println("Regando4");
+    digitalWrite (water_pump_pin4, HIGH);
+    delay(8000);
+  }
+  else {
+    digitalWrite(water_pump_pin4, LOW);
+    Serial.println("Riego detenido4");
+  }
+  // Ejecuta el código cada 2000 milisegundos, es decir, 2 segundos. Puedes variar la frecuencia de muestreo
+  delay(2000);
+}
