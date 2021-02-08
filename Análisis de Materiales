@@ -176,31 +176,6 @@ Máx. rendimiento: 100 L/h H. Max: 0,8 m
  
   Trabajo en conjunto con una bomba de aire, no echa de ruido.
 
-Diodo 1N7004
-Un diodo es un componente electrónicos de dos terminales que permite la circulación de la corriente eléctrica a través de él en un solo sentido. La flecha del símbolo del diodo muestra la dirección en la cual puede fluir la corriente.
-El 1N4007 es un diodo rectificador de recuperación estándar con una caja de plástico moldeada. Terminales soldables según MIL-STD-202, método 208 estándar. La banda de color indica la polaridad del extremo del cátodo.
-
-
-Especificaciones
-Tipo de diodo: Estándar recuperadores
-Tipo: Rectificador de propósito general
-Con configuración: Sencilla
-Tensión máxima de apagado repetitiva, Vdrm: 1000 V
-Corriente directa  lf (AV): 1 A
-Voltaje directo máximo VF: 1.1 V
-Corriente directa transitoria Ifsm máxima: 30 A
-Temperatura de operación máxima:  175°C
-Encapsulado: DO-204AL
-Axial: 2 puntas
-Modelo: 65W8780
-Modelo: 803-467
- 
-
-Transistor PN2222
-El 2N2222, también identificado como PN2222, es un transistor bipolar NPN de baja potencia de uso general.
-Sirve tanto para aplicaciones de amplificación como de conmutación. Puede amplificar pequeñas corrientes a tensiones pequeñas o medias; por lo tanto, sólo puede tratar potencias bajas (no mayores de medio vatio). Puede trabajar a frecuencias medianamente altas.
- 
-
 Fotoresistor
 Una fotorresistencia es un componente eléctrico, el cual posee una resistencia capaz de variar su magnitud al estar en contacto con distintas magnitudes de intensidad lumínica.
 Está conformado por una célula fotorreceptora y dos pastillas; cuando dicha célula no percibe cierto nivel de luz (es decir cuando baja del mínimo de lúmenes predefinido), entonces hace contacto y se encienden las luces.
