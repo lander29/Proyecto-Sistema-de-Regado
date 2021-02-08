@@ -1,76 +1,24 @@
 
-Arduino UNO  \Huge
-
-Para que un componente o sensor funcione, requiere que lo programes en el código de Arduino.
-
-Vamos a ir viendo como plantear las especificaciones según el componente y los requerimientos 
-Idea
-Requerimiento 
-
-
-Microcontrolador: conexión a Internet 
-Al necesitar conexión a Internet necesitamos conexión con WiFi pero,
-¿es necesario desde el primer momento? 
-
-
-Temperatura 
-Dependerá de donde vivas. No es lo mismo medir la temperatura en
-Sevilla que en Estocolmo. El rango que debe medir es totalmente diferente. 
-
-
-Humedad 
-Puedes usar un sensor específico para medir la humedad o uno combinado
-para medir temperatura y humedad a la vez 
-Listo el programa de arduino con valor enteros y porcentaje.
-Presión atmosférica 
-Igual que en el caso anterior, ¿existe algún sensor que mida temperatura,
-humedad y presión? 
-Luminosidas
-Con una resistencia LDR te puede servir, dependerá de dónde vivas 
-
-
-Batería 
-¿Qué consumo necesita el sistema?¿Soporta la alimentación con baterías?
-¿Voltaje de operación? 
-
-
-Pantalla información 
-¿Qué información hay que mostrar? Temperatura, humedad, presión,
-decibelios, contaminación, nivel de batería, velocidad del viento, etc….
-Dependerá elegir una pantalla u otra de la información que quieras mostrar. 
-
-
-Plataforma en la nube 
-¿Realmente es útil para ti almacenar la información?¿toda la información? 
-
-
-Aplicación web 
-Debe ser responsivo para que se vea en todos los dispositivos. 
-
-
-
-Es importante plantearte dudas y preguntas con respecto a los componentes. Esta es la fase previa antes de elegir un componente u otro para el proyecto. El sensor, placa o dispositivo elegido debe cumplir con las especificaciones y requerimientos 
-
-
-Arduino NANO
+## Arduino NANO
 El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
 
-Especificaciones técnicas de Arduino Nan
-Microcontrolador Arduino ATmega328
-Arquitectura, AVR
-Voltaje de operación, 5 V
-Memoria flash,32 KB de los cuales 2 KB utilizados por bootloader
-SRAM 2 KB
-Velocidad del reloj 16 MHz
-Pines de E/S analógicas, 8
-EEPROM,1 KB
-Corriente continua por pin entrada salida, 40 mA (Pines de E/S)
-Voltaje de entrada, 7-12V
-Pines de E/S digitales, 22
-Salida PWM, 6
-Consumo de energía, 19 mA
-Tamaño de la placa de circuito impreso,18 x 45 mm
-Peso, 7 g
+ ### Especificaciones técnicas de Arduino Nano:
+ 
+- Microcontrolador Arduino ATmega328
+- Arquitectura, AVR
+- Voltaje de operación, 5 V
+- Memoria flash,32 KB de los cuales 2 KB utilizados por bootloader
+- SRAM 2 KB
+- Velocidad del reloj 16 MHz
+- Pines de E/S analógicas, 8
+- EEPROM,1 KB
+- Corriente continua por pin entrada salida, 40 mA (Pines de E/S)
+- Voltaje de entrada, 7-12V
+- Pines de E/S digitales, 22
+- Salida PWM, 6
+- Consumo de energía, 19 mA
+- Tamaño de la placa de circuito impreso,18 x 45 mm
+- Peso, 7 g
 
 
 ProtoBoard 
