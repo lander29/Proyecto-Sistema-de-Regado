@@ -48,6 +48,8 @@ El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy 
 
 El DHT11 es un sensor digital de temperatura y humedad de bajo costo y fácil uso. Integra un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no posee salida analógica).Una de las ventajas que nos ofrece el DHT11, además de medir la temperatura y la humedad, es que es digital. A diferencia de sensores como el LM35, este sensor utiliza un pin digital para enviarnos la información y por lo tanto, estaremos más protegidos frente al ruido.
 
+![DHT11](https://www.dhresource.com/0x0/f2/albu/g5/M01/31/E4/rBVaI1nMZ0OABUG9AATvkHWc5ZY128.jpg)
+
 ### Sensor YL-69
 
 Este sensor tiene la capacidad de medir la humedad del suelo. Aplicando una pequeña tensión entre los terminales del módulo YL-69 hace pasar una corriente que depende básicamente de la resistencia que se genera en el suelo y ésta depende mucho de la humedad. Por lo tanto, al aumentar la humedad la corriente crece y al bajar la corriente disminuye.
