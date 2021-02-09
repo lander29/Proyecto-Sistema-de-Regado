@@ -66,6 +66,8 @@ Una fotorresistencia es un componente eléctrico, el cual posee una resistencia 
  
 NodeMCU es una plataforma IoT de código abierto. Incluye el firmware que se ejecuta en el SoC Wi-Fi ESP8266 de Espressif Systems y el hardware que se basa en el módulo ESP-12. El término "NodeMCU" se refiere al firmware en lugar de a los kits de desarrollo. El firmware utiliza el lenguaje Lua. Se basa en el proyecto eLua y se basa en el SDK no operativo de Espressif para el ESP8266. Utiliza muchos proyectos de código abierto, como lua-cjson, y spiffs.
 
+![Node](https://i.ebayimg.com/images/g/XF8AAOSwYXddbvfy/s-l300.jpg)
+
 ### Rele
 
 Es un dispositivo electromagnético . Funciona como un interruptor controlado por un circuito eléctrico en el que, por medio de una bobina y un electroimán, se acciona un juego de uno o varios contactos que permiten abrir o cerrar otros circuitos eléctricos independientes.
