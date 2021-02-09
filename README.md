@@ -24,6 +24,7 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
  
  - Arduino NANO
  - Protoboard
+ - Rele (5v)
  - Sensor de Humedad (YL - 69)
  - Sensor de Temperatura (DHT11)
  - 4 Motobombas
@@ -41,10 +42,27 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
 
 El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
 
+![Ardu Nano](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVMlVs2jiMYDlWJXXc8zDGTxShlFnzQg-cg&usqp=CAU)
 
+### Sensor de Temperatura
 
+El DHT11 es un sensor digital de temperatura y humedad de bajo costo y fácil uso. Integra un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no posee salida analógica).Una de las ventajas que nos ofrece el DHT11, además de medir la temperatura y la humedad, es que es digital. A diferencia de sensores como el LM35, este sensor utiliza un pin digital para enviarnos la información y por lo tanto, estaremos más protegidos frente al ruido.
 
+### Sensor YL-69
 
+Este sensor tiene la capacidad de medir la humedad del suelo. Aplicando una pequeña tensión entre los terminales del módulo YL-69 hace pasar una corriente que depende básicamente de la resistencia que se genera en el suelo y ésta depende mucho de la humedad. Por lo tanto, al aumentar la humedad la corriente crece y al bajar la corriente disminuye.
+
+### Fotoresistor
+
+Una fotorresistencia es un componente eléctrico, el cual posee una resistencia capaz de variar su magnitud al estar en contacto con distintas magnitudes de intensidad lumínica.
+
+### NodeMCU
+ 
+NodeMCU es una plataforma IoT de código abierto. Incluye el firmware que se ejecuta en el SoC Wi-Fi ESP8266 de Espressif Systems y el hardware que se basa en el módulo ESP-12.​ El término "NodeMCU" se refiere al firmware en lugar de a los kits de desarrollo. El firmware utiliza el lenguaje Lua. Se basa en el proyecto eLua y se basa en el SDK no operativo de Espressif para el ESP8266. Utiliza muchos proyectos de código abierto, como lua-cjson, y spiffs.
+
+### Rele
+
+Es un dispositivo electromagnético . Funciona como un interruptor controlado por un circuito eléctrico en el que, por medio de una bobina y un electroimán, se acciona un juego de uno o varios contactos que permiten abrir o cerrar otros circuitos eléctricos independientes.
 
 
 
