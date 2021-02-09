@@ -18,5 +18,67 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
 
 ![Dash](https://themicrofcontrol.files.wordpress.com/2017/08/deepinscreenshot_select-area_20170813015351.png?w=1350)
 
+ ## Materiales
+ 
+  Para este proyecto se necesitara de los siguientes materiales y programas:
+ 
+ - Arduino NANO
+ - Protoboard
+ - Sensor de Humedad (YL - 69)
+ - Sensor de Temperatura (DHT11)
+ - 4 Motobombas
+ - Fotoresistor (LDR)
+ - Tubos
+ - Raspberry pi 3 B+ 
+ - Pantalla Raspberry pi táctil
+ - El programa MQTT
+ - Node-RED
+ - NodeMCU
+ 
+ ## Especificaciones de Los Materiales
+ 
+### Arduino NANO
+
+El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
