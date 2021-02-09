@@ -70,7 +70,7 @@ NodeMCU es una plataforma IoT de código abierto. Incluye el firmware que se eje
 
 Es un dispositivo electromagnético . Funciona como un interruptor controlado por un circuito eléctrico en el que, por medio de una bobina y un electroimán, se acciona un juego de uno o varios contactos que permiten abrir o cerrar otros circuitos eléctricos independientes.
 
-
+![rele](https://cemcables.com/2132-large_default/rele-5v-dc-2-contactos.jpg)
 
 
 
