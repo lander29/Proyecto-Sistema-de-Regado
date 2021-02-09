@@ -14,7 +14,9 @@ Con ayuda de MQTT, NodeRed y NodeMCU hemos hecho un servidor donde llegarán tod
 
 ![Node RED](https://2.bp.blogspot.com/-y_MFrFV9gk0/WCUUJZAuG2I/AAAAAAAAC28/Z2C--Gr4iyYXqMU1mhvZsT1nhJ3OyayoQCLcB/s1600/nodes.JPG)
 
-
-
+Luego esto lo podremos visualizar desde nuestro servidor web o directamente de un telefono movil, el cual en la misma NodeRED podremos diseñar una interfaz (DashBoard)
 
 ![Dash](https://themicrofcontrol.files.wordpress.com/2017/08/deepinscreenshot_select-area_20170813015351.png?w=1350)
+
+
+
