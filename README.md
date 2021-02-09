@@ -60,7 +60,7 @@ Este sensor tiene la capacidad de medir la humedad del suelo. Aplicando una pequ
 
 Una fotorresistencia es un componente eléctrico, el cual posee una resistencia capaz de variar su magnitud al estar en contacto con distintas magnitudes de intensidad lumínica.
 
-
+![LDR](https://cdn.shopify.com/s/files/1/0557/2945/products/LDR_x700.jpg?v=1543599244)
 
 ### NodeMCU
  
