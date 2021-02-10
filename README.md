@@ -108,3 +108,5 @@ Es un dispositivo electromagnético . Funciona como un interruptor controlado po
 
 
 
+
+
