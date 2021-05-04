@@ -42,6 +42,7 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
 
 El Arduino Uno es una placa de microcontrolador de código abierto basado en el microchip ATmega328P y desarrollado por Arduino.cc. La placa está equipada con conjuntos de pines de E/S digitales y analógicas que pueden conectarse a varias placas de expansión y otros circuitos.
 
+![ardu uno](https://aprendiendoarduino.files.wordpress.com/2017/08/componetes-uno.jpg)
 
 ### Sensor de Temperatura
 
