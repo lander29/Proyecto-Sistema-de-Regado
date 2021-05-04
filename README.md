@@ -22,7 +22,7 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
  
   Para este proyecto se necesitara de los siguientes materiales y programas:
  
- - Arduino NANO
+ - Arduino UNO
  - Protoboard
  - Rele (5v)
  - Sensor de Humedad (YL - 69)
@@ -37,12 +37,11 @@ Luego esto lo podremos visualizar desde nuestro servidor web o directamente de u
  - NodeMCU
  
  ## Especificaciones de Los Materiales
- 
-### Arduino NANO
 
-El Arduino Nano es una pequeña y completa placa basada en el ATmega328. Es muy compacto y puede ser utilizado fácilmente en un protoboard. Tiene más o menos la misma funcionalidad que el Arduino Uno, pero con una presentación diferente. La placa es compatible 100%.
+### Arduino UNO
 
-![Ardu Nano](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVMlVs2jiMYDlWJXXc8zDGTxShlFnzQg-cg&usqp=CAU)
+El Arduino Uno es una placa de microcontrolador de código abierto basado en el microchip ATmega328P y desarrollado por Arduino.cc. La placa está equipada con conjuntos de pines de E/S digitales y analógicas que pueden conectarse a varias placas de expansión y otros circuitos.
+
 
 ### Sensor de Temperatura
 
